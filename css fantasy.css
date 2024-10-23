@@ -1,0 +1,11 @@
+img{
+    width: 20%;
+}
+h1{
+    color: rgb(255, 0, 0);
+    text-align: right;
+    background-color: rgb(38, 37, 37);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2%;
+}
