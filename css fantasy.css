@@ -12,6 +12,13 @@ figure{
     display: inline-block;
     width: 15%;
     margin: 4%;
+    vertical-align: top;
+}
+@media screen and (max-width:960px){
+    figure{
+        display: block;
+        width: 100%;
+    }
 }
 .ancho{
     width: 250px;
