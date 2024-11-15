@@ -1,5 +1,25 @@
+body{
+    background-image:url("imagenes/fondo.PNG");
+    color: white;
+}
 main{
+    margin-top: -30px;
+    margin: -8px;
     text-align: center;
+    background-image:url("imagenes/fondo.PNG")
+}
+.cami{
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    margin: 8px;
+    background-image: url("imagenes/fondo-cesped-2.png");
+}
+.texto{
+    background-image:url("imagenes/fondo.PNG");
+    margin: -8px;
+    margin-bottom: -30px;
+    padding: 3%;
 }
 img{
     width: 200px;
@@ -7,6 +27,7 @@ img{
 }
 figcaption{
     text-align: center;
+    color: white;
 }
 figure{
     display: inline-block;
@@ -27,8 +48,27 @@ figure{
 h1{
     color: rgb(255, 0, 0);
     text-align: right;
-    background-color: rgb(38, 37, 37);
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 2%;
+}
+.video-background {
+    margin-top: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.video-background video {
+    min-width: 100vw;  
+    min-height: 100vh;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
