@@ -37,7 +37,7 @@ img{
 }
 figcaption{
     text-align: center;
-    color: black
+    color: black;
 }
 figure{
     display: inline-block;
@@ -56,11 +56,19 @@ figure{
     height: 250px;
 }
 h1{
+    background-image:url("imagenes/fondo.webp");
     color: rgb(255, 0, 0);
     text-align: right;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 2%;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 .video-background {
     margin-top: 2%;
@@ -92,5 +100,52 @@ footer{
 }
 footer p{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
-  
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 30px;
+    display: inline-flex;
+    font: bold 1.5rem sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+  ul li {
+    padding: 0 .5em .25em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+  ul li:hover {
+    color: #fff;
+}
+  ul li:before {
+    content: "";
+    position: absolute;
+    inset: calc(100% - 3px) 0 0 0;
+    background: red;
+    scale: 0 1;
+    transition: .3s, translate 0s .3s;
+}
+  ul:hover li:before {
+    scale: 1;
+}
+  ul li:hover:before {
+    translate: 0;
+    transition: .3s;
+}
+  ul:hover li:has(~ li:hover):before {
+    translate: 100% 0;
+    transition: .2s .2s,scale 0s .4s;
+}
+  ul:hover li:hover ~ li:before {
+    translate: -100% 0;
+    transition: .2s .2s,scale 0s .4s;
+}
+#final{
+    text-align: center;
+    margin: auto;
+}
