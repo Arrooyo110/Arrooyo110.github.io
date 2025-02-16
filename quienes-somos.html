@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
     <style>
-        body{
+        body {
             text-align: center;
             font-family: "Tinos", serif;
-            background-image:url("imagenes/fondo.webp");
+            background-image: url("imagenes/fondo.webp");
             color: white;
         }
-        h1{
+
+        h1 {
             display: block;
         }
-        #titulo{
+
+        #titulo {
             background-color: white;
             color: red;
             text-align: right;
@@ -25,30 +28,62 @@
             margin-left: -8px;
             margin-right: -8px;
         }
-        #volver{
-            padding-left: 2%;
-            margin-top: 4%;
-            text-align: left;
-            margin-bottom: -5%;
+
+        #volver {
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
             color: red;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 2;
         }
-        #texto{
+
+        #texto {
             margin: 10%;
             margin-bottom: 7%;
-            font-size:xx-large;
+            font-size: xx-large;
         }
-        img{
+
+        img {
             width: 40%;
             margin-bottom: 3%;
         }
-        a{
+
+        a {
             color: red;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 480px) {
+            #titulo {
+                text-align: center;
+            }
+
+            #texto {
+                font-size: medium;
+                margin: 10px;
+            }
+
+            img {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1 id="volver"><a href="index.html">Volver</a></h1><h1 id="titulo">¿Quienes somos?</h1>
+        <h1 id="volver"><a href="index.html">Volver</a></h1>
+        <h1 id="titulo">¿Quienes somos?</h1>
     </header>
     <main>
         <p id="texto">Soy un estudiante del instituto CDM FP y esta pagina web es un proyecto de clase</p>
@@ -58,4 +93,5 @@
         <p>&copy;Alejandro Arroyo DAM</p>
     </footer>
 </body>
+
 </html>

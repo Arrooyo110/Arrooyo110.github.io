@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimas noticias</title>
     <style>
-        body{
+        body {
             text-align: center;
             font-family: "Tinos", serif;
-            background-image:url("imagenes/fondo.webp");
+            background-image: url("imagenes/fondo.webp");
             color: white;
         }
-        h1{
+
+        h1 {
             display: block;
         }
-        h2{
+
+        h2 {
             font-size: xx-large;
         }
-        #titulo{
+
+        #titulo {
             background-color: white;
             color: red;
             text-align: right;
@@ -28,52 +32,89 @@
             margin-left: -8px;
             margin-right: -8px;
         }
-        #volver{
-            padding-left: 2%;
-            margin-top: 4%;
-            text-align: left;
-            margin-bottom: -5%;
+
+        #volver {
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
             color: red;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 2;
         }
-        main p{
+        main p {
             margin: 10%;
             margin-top: 60px;
             margin-bottom: 7%;
-            font-size:x-large;
+            font-size: x-large;
         }
-        img{
+
+        img {
             width: 40%;
             margin-bottom: 3%;
         }
-        a{
+
+        a {
             color: red;
         }
-        span a{
+
+        span a {
             background-color: red;
             color: white;
             padding: 10px;
+            margin: 10%;
         }
-        footer{
-            position: absolute;
+        footer {
+            position: relative;
             bottom: 0;
-            left: 50%;
+            margin-top: 90px;
+        }
+
+        @media (max-width: 480px) {
+            #titulo {
+                text-align: center;
+            }
+
+            main p {
+                font-size: medium;
+                margin: 10px;
+                margin-bottom: 30px;
+            }
+
+            img {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1 id="volver"><a href="index.html">Volver</a></h1><h1 id="titulo">Ultimas noticias</h1>
+        <h1 id="volver"><a href="index.html">Volver</a></h1>
+        <h1 id="titulo">Ultimas noticias</h1>
     </header>
     <main>
         <h2>¿Cuando salen todas las equipaciones de la temporada 25/26?</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam vitae obcaecati eaque, dolorem laboriosam tenetur laudantium, sapiente, officia officiis voluptatem neque mollitia temporibus maxime exercitationem? Praesentium fugiat tenetur dicta harum.
-        Nesciunt accusamus praesentium ad quae, minima consequuntur. Maxime corporis accusamus ducimus aliquam tempora placeat? Eius fuga corrupti aliquam, perferendis vitae reprehenderit quia nesciunt qui quibusdam iusto magni. Totam, natus cumque.
-        Corporis harum architecto repudiandae ipsam repellendus velit ducimus, possimus accusamus rem debitis. Aspernatur commodi provident quasi dicta! Dolorum, alias repellendus iure maxime atque, vitae molestias eligendi, ducimus culpa quasi qui.
-        Distinctio dolorum officiis nulla accusantium corrupti optio, architecto sint voluptatum quia officia molestias totam molestiae tempora repellat inventore earum natus dignissimos quaerat rem, blanditiis laboriosam facere, necessitatibus fugiat. Placeat, sunt!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam vitae obcaecati eaque, dolorem laboriosam
+            tenetur laudantium, sapiente, officia officiis voluptatem neque mollitia temporibus maxime exercitationem?
+            Praesentium fugiat tenetur dicta harum.
+            Nesciunt accusamus praesentium ad quae, minima consequuntur. Maxime corporis accusamus ducimus aliquam
+            tempora placeat? Eius fuga corrupti aliquam, perferendis vitae reprehenderit quia nesciunt qui quibusdam
+            iusto magni. Totam, natus cumque.
+            Corporis harum architecto repudiandae ipsam repellendus velit ducimus, possimus accusamus rem debitis.
+            Aspernatur commodi provident quasi dicta! Dolorum, alias repellendus iure maxime atque, vitae molestias
+            eligendi, ducimus culpa quasi qui.
+            Distinctio dolorum officiis nulla accusantium corrupti optio, architecto sint voluptatum quia officia
+            molestias totam molestiae tempora repellat inventore earum natus dignissimos quaerat rem, blanditiis
+            laboriosam facere, necessitatibus fugiat. Placeat, sunt!</p>
         <span><a href="NoticiasLaLiga.html">Noticias de LaLiga</a></span>
     </main>
     <footer>
         <p>&copy;Alejandro Arroyo DAM</p>
     </footer>
 </body>
+
 </html>

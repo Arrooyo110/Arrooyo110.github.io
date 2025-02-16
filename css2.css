@@ -18,19 +18,23 @@ main{
     background-color: white;
 }
 .texto{
-    width: fit-content;
-    margin: auto;
+    width: 99%;
+    margin: 0;
+    margin-left: -11px;
     text-align: center;
     margin-bottom: 0;
     padding: 1%;
     padding-top: 0;
+    padding-bottom: 5px;
     color: rgb(255, 0, 0);
+    background-color: #11111f67;
 }
 .texto2{
     margin: 0;
     text-align: center;
     padding: 30px;
-    margin-bottom: -10px;
+    font-size: xx-large;
+    margin-bottom:-10px;
 }
 img{
     width: 100%;
@@ -190,6 +194,8 @@ ul {
 }
 main div:nth-of-type(1){
     color: red;
+    padding-top: 30px;
+    font-size: x-large;
 }
 main div:nth-of-type(1) span{
     background-color: red;

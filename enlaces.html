@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Páginas enlazadas</title>
     <style>
-        body{
+        body {
             text-align: center;
             font-family: "Tinos", serif;
-            background-image:url("imagenes/fondo.webp");
+            background-image: url("imagenes/fondo.webp");
             color: white;
         }
-        h1{
+
+        h1 {
             display: block;
         }
-        #titulo{
+
+        #titulo {
             background-color: white;
             color: red;
             text-align: right;
@@ -25,62 +28,94 @@
             margin-left: -8px;
             margin-right: -8px;
         }
-        #volver{
-            padding-left: 2%;
-            margin-top: 4%;
-            text-align: left;
-            margin-bottom: -5%;
+
+        #volver {
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 2;
+        }
+
+        a {
             color: red;
         }
-        a{
-            color: red;
-        }
-        div{
+
+        div {
             display: inline-block;
             text-align: center;
             width: 90%;
             margin: 8px;
         }
-        img{
+
+        img {
             width: 100%;
         }
-        figcaption{
+
+        figcaption {
             text-align: center;
             color: white;
         }
-        figure{
+
+        figure {
             display: inline-block;
             width: 40%;
             margin: 4%;
             vertical-align: top;
         }
-        @media screen and (max-width:960px){
-            figure{
+        footer {
+            position: relative;
+            bottom: 0;
+            margin-top: 90px;
+        }
+
+        @media (max-width: 480px) {
+            figure {
                 display: block;
                 width: 100%;
+            }
+
+            img {
+                width: 90%;
+            }
+
+            div {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1 id="volver"><a href="index.html">Volver</a></h1><h1 id="titulo">Enlaces</h1>
+        <h1 id="volver"><a href="index.html">Volver</a></h1>
+        <h1 id="titulo">Enlaces</h1>
     </header>
     <main>
         <div>
-        <figure><a href="https://victorgarv.github.io/"><img src="imagenes/pagina-celta.webp" alt="Página del celta"></a>
-            <figcaption>RC Celta</figcaption>
-        </figure>
-        <figure><a href="https://seeergiio.github.io/"><img src="imagenes/pagina-atleti.webp" alt="Página del Atletico de Madrid"></a>
-        <figcaption>Atletico de Madrid</figcaption>
-        </figure>
-        <figure><a href="https://poolmacarni.github.io/"><img src="imagenes/pagina-coches.webp" alt="Página de coches"></a>
-            <figcaption>Mejores primeros coches calidad precio</figcaption>
-        </figure>
+            <figure><a href="https://victorgarv.github.io/"><img src="imagenes/pagina-celta.webp"
+                        alt="Página del celta"></a>
+                <figcaption>RC Celta</figcaption>
+            </figure>
+            <figure><a href="https://seeergiio.github.io/"><img src="imagenes/pagina-atleti.webp"
+                        alt="Página del Atletico de Madrid"></a>
+                <figcaption>Atletico de Madrid</figcaption>
+            </figure>
+            <figure><a href="https://poolmacarni.github.io/"><img src="imagenes/pagina-coches.webp"
+                        alt="Página de coches"></a>
+                <figcaption>Mejores primeros coches calidad precio</figcaption>
+            </figure>
         </div>
     </main>
     <footer>
         <p>&copy;Alejandro Arroyo DAM</p>
     </footer>
 </body>
+
 </html>
