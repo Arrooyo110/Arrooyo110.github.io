@@ -4,8 +4,9 @@ body{
     color: white;
 }
 main{
+    width: 100%;
     margin-top: -30px;
-    margin: -8px;
+    margin: 0;
     text-align: center;
     background-color: white;
 }
@@ -149,4 +150,13 @@ ul {
 #final{
     text-align: center;
     margin: auto;
+}
+@media (max-width: 960px){
+    li{
+        display: block;
+        width: 100%;
+    }
+}
+main div:nth-of-type(1){
+    color: red;
 }
